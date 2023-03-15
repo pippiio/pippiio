@@ -1,5 +1,6 @@
 repositories = {
-  "pippiio" = { description = "Terraform configuration for pippiio" }
+  "pippiio"  = { description = "Terraform configuration for pippiio" }
+  "template" = { description = "Template repository for pippiio modules" }
 
   "aws-cicd"             = { description = "Terraform module for deploying AWS CICD resources" }
   "aws-cognito-userpool" = { description = "Terraform module for deploying AWS Cognito Userpool resources" }
