@@ -49,7 +49,7 @@ variable "teams" {
 variable "repositories" {
   type = map(object({
     description                = string
-    visibility                 = optional(string, "private")
+    visibility                 = optional(string, "public")
     homepage                   = optional(string)
     enable_projects            = optional(bool, false)
     enable_wiki                = optional(bool, false)
@@ -61,7 +61,7 @@ variable "repositories" {
     required_approvals         = optional(number, 1)
     require_code_owner_reviews = optional(bool, false)
     required_status_checks     = optional(set(string), [])
-    team_permission            = map(bool)
+    team_permission            = optional(map(bool), {})
     collaborator_permission    = optional(map(bool), {})
     environments               = optional(set(string), [])
   }))
@@ -115,4 +115,18 @@ variable "environments" {
           value     : The variable value
           sensitive : Wether the variable should be marked as sensitive
   EOL
+}
+
+variable "app_auth" {
+  type = object({
+    id              = string
+    installation_id = string
+  })
+  description = "https://github.com/organizations/pippiio/settings/apps/"
+}
+
+variable "app_auth_private_key" {
+  type        = string
+  sensitive   = true
+  description = "https://github.com/organizations/pippiio/settings/apps/"
 }
