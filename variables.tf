@@ -64,6 +64,9 @@ variable "repositories" {
     team_permission            = optional(map(bool), {})
     collaborator_permission    = optional(map(bool), {})
     environments               = optional(set(string), [])
+    template                   = optional(string)
+    is_template                = optional(bool, false)
+    topics                     = optional(list(string), [])
   }))
   description = <<-EOL
     A map of GitHub repositories in the organization.
@@ -90,6 +93,9 @@ variable "repositories" {
         Key   : The collaborator's GitHub username
         Value : Set to true to grant write access and false to grant read-only access
       environments               : A set of references to shared secrets to add to configure for the repo
+      template                   : The name of the template repository. This must be loctaed within the same organization.
+      is_template                : Wether the repository is enabled as template repository.
+      topics                     : The list of topics of the repository.
   EOL
 }
 
