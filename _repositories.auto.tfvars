@@ -22,8 +22,8 @@ repositories = {
 }
 
 teams = {
-  "techchapter" = { 
+  "techchapter" = {
     description = "Maintainers of pippiio organization from TechChapter"
-    members = {}
+    members     = {}
   }
 }
