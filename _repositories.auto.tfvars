@@ -20,3 +20,10 @@ repositories = {
   "github-organization"  = { description = "Terraform module for managing a GitHub organization" }
   "tfcloud-organization" = { description = "Terraform module for managing a Terraform Cloud Organization" }
 }
+
+teams = {
+  "techchapter" = { 
+    description = "Maintainers of pippiio organization from TechChapter"
+    members = {}
+  }
+}
