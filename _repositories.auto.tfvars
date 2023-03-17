@@ -26,4 +26,8 @@ teams = {
     description = "Maintainers of pippiio organization from TechChapter"
     members     = {}
   }
+  "maintainer" = {
+    description = "Maintainers of pippiio"
+    members     = {}
+  }
 }

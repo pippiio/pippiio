@@ -1,6 +1,6 @@
 locals {
   repositories = {
-    for repo_name, repo in var.repositories : repo_name => merge(repo, { team_permission = { "techchapter" = true } })
+    for repo_name, repo in var.repositories : repo_name => merge(repo, { team_permission = { "techchapter" = true, "maintaner" = true } })
   }
 }
 
