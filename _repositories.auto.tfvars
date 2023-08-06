@@ -17,17 +17,7 @@ repositories = {
   "aws-static-website"   = { description = "A static-website based on S3 with CloudFront CDN" }
   "aws-vpc"              = { description = "Terraform module for deploying AWS VPC resources" }
 
-  "github-organization"  = { description = "Terraform module for managing a GitHub organization" }
-  "tfcloud-organization" = { description = "Terraform module for managing a Terraform Cloud Organization" }
-}
+  "github-organization" = { description = "Terraform module for managing a GitHub organization" }
 
-teams = {
-  "techchapter" = {
-    description = "Maintainers of pippiio organization from TechChapter"
-    members     = {}
-  }
-  "maintainer" = {
-    description = "Maintainers of pippiio"
-    members     = {}
-  }
+  "tfcloud-organization" = { description = "Terraform module for managing a Terraform Cloud Organization" }
 }

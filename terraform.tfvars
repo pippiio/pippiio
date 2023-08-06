@@ -1,5 +1,4 @@
 app_auth = {
-  # https://github.com/organizations/pippiio/settings/installations/35281913
   id              = "305781"
   installation_id = "35281913"
 }
@@ -17,4 +16,9 @@ organization = {
   members         = {}
 }
 
-teams = {}
+teams = {
+  "techchapter" = {
+    description = "Maintainers of pippiio organization from TechChapter"
+    members     = {}
+  }
+}
