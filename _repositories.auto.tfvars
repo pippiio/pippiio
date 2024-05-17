@@ -20,4 +20,6 @@ repositories = {
   "github-organization" = { description = "Terraform module for managing a GitHub organization" }
 
   "tfcloud-organization" = { description = "Terraform module for managing a Terraform Cloud Organization" }
+
+  "hetzner-s3" = { description = "Terraform module for deploying a S3 compatible service on Hetzner" }
 }
