@@ -11,7 +11,7 @@ locals {
 }
 
 module "github" {
-  source = "github.com/pippiio/github-organization?ref=v1.4.0"
+  source = "github.com/pippiio/github-organization?ref=v2.2.1"
 
   organization = merge({ members = {} }, var.organization)
   teams        = var.teams

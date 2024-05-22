@@ -63,10 +63,14 @@ variable "repositories" {
     required_status_checks     = optional(set(string), [])
     team_permission            = optional(map(bool), {})
     collaborator_permission    = optional(map(bool), {})
-    environments               = optional(set(string), [])
     template                   = optional(string)
     is_template                = optional(bool, false)
     topics                     = optional(list(string), [])
+    environments = optional(map(map(object({
+      description = string
+      value       = string
+      sensitive   = bool
+    }))), {})
   }))
   description = <<-EOL
     A map of GitHub repositories in the organization.
