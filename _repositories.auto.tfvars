@@ -18,5 +18,6 @@ repositories = {
   "aws-terraform-backend" = { description = "Terraform module for setting up Terraform S3 backend" }
   "aws-vpc"               = { description = "Terraform module for deploying AWS VPC resources" }
   "github-organization"   = { description = "Terraform module for managing a GitHub organization" }
+  "hetzner-s3"            = { description = "Terraform module for deploying a S3 compatible service on Hetzner" }
   "tfcloud-organization"  = { description = "Terraform module for managing a Terraform Cloud Organization" }
 }
