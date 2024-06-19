@@ -5,6 +5,7 @@ repositories = {
     is_template = true
   }
 
+  "aws-announcer"         = { description = "Terraform module for deploying a AWS serverles notifications center to send messages in multiple communication channels" }
   "aws-cicd"              = { description = "Terraform module for deploying AWS CICD resources" }
   "aws-cognito-userpool"  = { description = "Terraform module for deploying AWS Cognito Userpool resources" }
   "aws-dns"               = { description = "Terraform module for deploying AWS Route53 resources" }
