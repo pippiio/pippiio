@@ -18,7 +18,8 @@ organization = {
 
 teams = {
   "techchapter" = {
-    description = "Maintainers of pippiio organization from TechChapter"
-    members     = {}
+    description        = "Maintainers of pippiio organization from TechChapter"
+    members            = {}
+    bypass_version_tag = true
   }
 }

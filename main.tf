@@ -12,7 +12,7 @@ locals {
 }
 
 module "github" {
-  source = "github.com/pippiio/github-organization?ref=v2.2.2"
+  source = "git::https://github.com/pippiio/github-organization?ref=feat/org-tag-ruleset"
 
   organization = merge({ members = {} }, var.organization)
   teams        = var.teams
