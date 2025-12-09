@@ -1,6 +1,7 @@
 locals {
+  raw_input = yamldecode(file("repositories.yaml"))
   repositories = {
-    for repo_name, repo in var.repositories : repo_name => merge(repo, {
+    for repo_name, repo in local.raw_input : repo_name => merge(repo, {
       enable_issues           = true
       enable_discussions      = true
       allow_bypass_protection = true
