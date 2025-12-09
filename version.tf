@@ -1,5 +1,5 @@
 terraform {
-  required_version = "~>1.8"
+  required_version = "~>1.14"
 
   required_providers {
     github = {
@@ -8,7 +8,7 @@ terraform {
     }
 
     tfe = {
-      version = "~>0.53"
+      version = "~>0.71"
     }
   }
 }
