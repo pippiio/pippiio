@@ -1,0 +1,86 @@
+---
+pippiio:
+  description: Terraform configuration for pippiio
+  visibility: public
+
+template:
+  description: Template repository for pippiio modules
+  visibility: public
+
+actions:
+  description: GitHub actions repository
+  visibility: public
+
+argocd:
+  description: ArgoCD best practise installation using Terraform
+  visibility: public
+
+aws-announcer:
+  description: Terraform module for deploying a AWS serverles notifications center to send messages in multiple communication channels
+  visibility: public
+
+aws-cicd:
+  description: Terraform module for deploying AWS CICD resources
+  visibility: public
+  archived: true
+
+aws-cognito-userpool:
+  description: Terraform module for deploying AWS Cognito Userpool resources  
+  visibility: public
+
+aws-dns:
+  description: Terraform module for deploying AWS Route53 resources
+  visibility: public
+
+aws-ec2:
+  description: Terraform module for EC2 autoscalling
+  visibility: public
+
+aws-ecr:
+  description: Terraform module for deploying AWS ECR resources
+  visibility: public
+
+aws-eks:
+  description: Terraform module for deploying AWS EKS (Kubernetes) resources
+  visibility: public
+
+aws-organization:
+  description: Terraform module for deploying AWS Organization resources
+  visibility: public
+
+aws-rds:
+  description: Terraform module for deploying AWS RDS resources
+  visibility: public
+
+aws-serverless:
+  description: Terraform module for deploying AWS Serverless resources
+  visibility: public
+
+aws-static-website:
+  description: A static-website based on S3 with CloudFront CDN
+  visibility: public
+
+aws-terraform-backend:
+  description: Terraform module for setting up Terraform S3 backend
+  visibility: public
+
+aws-vpc:
+  description: Terraform module for deploying AWS VPC resources
+  visibility: public
+
+github-organization:
+  description: Terraform module for managing a GitHub organization
+  visibility: public
+
+hetzner-s3:
+  description: Terraform module for deploying a S3 compatible service on Hetzner
+  visibility: public
+
+talos-cluster:
+  description: 
+  visibility: public
+
+tfcloud-organization:
+  description: Terraform module for managing a Terraform Cloud Organization
+  visibility: public
+  archived: true

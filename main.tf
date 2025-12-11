@@ -1,6 +1,7 @@
 locals {
+  raw_input = yamldecode(file("repositories.yaml"))
   repositories = {
-    for repo_name, repo in var.repositories : repo_name => merge(repo, {
+    for _name, _repo in local.raw_input : _name => merge(_repo, {
       enable_issues           = true
       enable_discussions      = true
       allow_bypass_protection = true
@@ -12,7 +13,7 @@ locals {
 }
 
 module "github" {
-  source = "git::https://github.com/pippiio/github-organization?ref=feat/org-tag-ruleset"
+  source = "github.com/pippiio/github-organization?ref=v3.0.0"
 
   organization = merge({ members = {} }, var.organization)
   teams        = var.teams
