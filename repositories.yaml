@@ -25,7 +25,7 @@ aws-cicd:
   archived: true
 
 aws-cognito-userpool:
-  description: Terraform module for deploying AWS Cognito Userpool resources  
+  description: Terraform module for deploying AWS Cognito Userpool resources
   visibility: public
 
 aws-dns:
@@ -77,10 +77,14 @@ hetzner-s3:
   visibility: public
 
 talos-cluster:
-  description: 
+  description: Terraform module for bootstrapping Talos Kubernetes cluster
   visibility: public
 
 tfcloud-organization:
   description: Terraform module for managing a Terraform Cloud Organization
   visibility: public
   archived: true
+
+helm-tenant:
+  description: Helm Chart for creating an isolated tenent within a Kubernetes cluster
+  visibility: private
