@@ -88,3 +88,7 @@ tfcloud-organization:
 helm-tenant:
   description: Helm Chart for creating an isolated tenent within a Kubernetes cluster
   visibility: private
+
+k8s-gitops:
+  description: Kubernetes GitOps module powered by FluxCD and ArgoCD
+  visibility: private
