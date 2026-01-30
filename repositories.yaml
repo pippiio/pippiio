@@ -72,6 +72,10 @@ github-organization:
   description: Terraform module for managing a GitHub organization
   visibility: public
 
+github-pull-request:
+  description: Terraform module to create the same pull-request within multiple repositories for bulk updates
+  visibnility: public
+
 hetzner-s3:
   description: Terraform module for deploying a S3 compatible service on Hetzner
   visibility: public
