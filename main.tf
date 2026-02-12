@@ -13,9 +13,19 @@ locals {
 }
 
 module "github" {
-  source = "github.com/pippiio/github-organization?ref=v3.0.1"
+  source = "github.com/pippiio/github-organization?ref=feat/git-runners"
 
   organization = merge({ members = {} }, var.organization)
   teams        = var.teams
   repositories = local.repositories
+
+  hosted_runners = {
+    groups = {
+      "grp1" = {
+        repositories = ["github-organization"]
+      }
+      "grp2" = {}
+    }
+  }
+
 }
