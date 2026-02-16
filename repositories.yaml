@@ -96,3 +96,7 @@ helm-tenant:
 k8s-gitops:
   description: Kubernetes GitOps module powered by FluxCD and ArgoCD
   visibility: public
+
+mikrotik:
+  description: Terraform module for deploying a MikroTik router configured to support a Kubernetes cluster
+  visibility: public
