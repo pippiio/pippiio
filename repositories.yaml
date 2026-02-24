@@ -100,3 +100,7 @@ k8s-gitops:
 mikrotik:
   description: Terraform module for deploying a MikroTik router configured to support a Kubernetes cluster
   visibility: public
+
+authentik:
+  description: Terraform module for managing an autentik installation
+  visibility: public
