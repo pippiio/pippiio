@@ -105,6 +105,6 @@ authentik:
   description: Terraform module for managing an autentik installation
   visibility: public
 
-tf-slack-provider:
+terraform-provider-slack:
   description: Terraform provider for sending slack messages
   visibility: public
